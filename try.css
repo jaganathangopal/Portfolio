@@ -1,0 +1,41 @@
+/* Initial styles for the hover area */
+.btn-container{
+  background-color: #1c1f35;
+  justify-items: center;
+
+}
+
+.hover-area {
+height: 1em;
+ 
+ 
+}
+
+.hover-text {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #141421;
+  border-radius: 0px;
+  background-color: #141421;
+  width: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #1c1f2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+  transition: bottom 0.5s ease;
+}
+
+.footer.visible {
+  bottom: 0;
+}

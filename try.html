@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <div class="hover-area">
+        <p class="hover-text">Hover over this text to reveal the footer.</p>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>This is the footer content.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.hover-text').addEventListener('mouseenter', () => {
+            document.querySelector('.footer').style.bottom = '0';
+        });
+        
+        document.querySelector('.hover-text').addEventListener('mouseleave', () => {
+            document.querySelector('.footer').style.bottom = '-100%';
+        });
+        
+        </script>
+</body>
+</html>
